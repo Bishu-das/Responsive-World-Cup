@@ -12,6 +12,12 @@
     margin-right: 200px;
     margin-top: 50px;
     column-gap: 140px;
+    transition: 1s;
+}
+.content:hover{
+    width: 70%;
+    height: 30%;
+
 }
 .summary h1{
     font-family: 'Poppins', sans-serif;
@@ -88,31 +94,43 @@ Media Queries
 ---------------*/
 @media only screen and (max-width: 480px) {
     .img{
-        grid-template-columns: repeat(1, 1fr);
-        
+        grid-template-columns: repeat(1, 1fr); 
     }
     .container{
         width: 100%;
     }
     .Blogs{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .match-details{
         grid-template-columns: repeat(1,1fr);
     }
-    .match-info, .blog{
+    .blog{
         flex-direction: column;
+    }
+    footer{
+        width: 70%;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
+    .img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Marcelo{
+        width: 100%;
+    }
     .Blogs{
         grid-template-columns: repeat(2, 1fr);
     }
     .container{
         width: 100%;
+
     }
     .match-info{
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
     }
 }
 .play-duration{
